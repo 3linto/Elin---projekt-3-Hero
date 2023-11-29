@@ -1,0 +1,95 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* CUSTOM PROPERTIES */
+:root {
+
+    /* Colors */
+    --color-green: #257E69;
+    --color-wood: #683C11;
+    --color-coffee: #9F7E54;
+    --color-sand: #E5D6C4;
+    --color-blue: #14142B;
+
+    /* Fonts */
+    --font-sans-1: "bebas-neue-pro", sans-serif;
+    --font-sans-2: "Inter", sans-serif;
+    --font-size: 16px;
+    --font-scale: 1.25; /*osäker på om jag skall gå med skalningen*/
+
+    --font-size-1: var(--font-size);
+    --font-size-2: calc( var(--font-size-1) * var(--font-scale) );
+    --font-size-3: calc( var(--font-size-2) * var(--font-scale) );
+    --font-size-4: calc( var(--font-size-3) * var(--font-scale) );
+    --font-size-5: calc( var(--font-size-4) * var(--font-scale) );
+    --font-size-6: calc( var(--font-size-5) * var(--font-scale) );
+    --font-size-small: calc( var(--font-size-1) / var(--font-scale) );
+    
+    --line-height: 1.5;
+
+    /* Grid */
+    --inner-width: 64rem; /*från innre section*/
+    --grid-container: minmax(32px, 1fr) [inner-start] minmax(0, var(--inner-width)) [inner-end] minmax(32px, 1fr)
+}
+
+/* TYPOGRAPHY */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-sans-1);
+}
+
+h1 {
+    font-size: var(--font-size-6);
+}
+
+h2 {
+    font-size: var(--font-size-5);
+}
+
+h3 {
+    font-size: var(--font-size-4);
+}
+
+h4 {
+    font-size: var(--font-size-3);
+}
+
+h5 {
+    font-size: var(--font-size-2);
+}
+
+h6 {
+    font-size: var(--font-size-1);
+}
+
+p,
+a,
+li,
+span {
+    font-size: var(--font-size-2);
+    line-height: var(--line-height);
+}
+
+a {
+    text-decoration: none;
+}
