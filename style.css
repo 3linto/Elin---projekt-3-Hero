@@ -107,3 +107,107 @@ a {
     letter-spacing: 0.08em;
     padding: 0.75rem 1.5rem;
 }
+
+/* MAIN LAYOUT */
+body {
+    background-color: var(--color-coffee);
+}
+
+/* HEADER */
+.site-header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+}
+
+.site-header__buttons {
+    width: 240px; /*temp*/
+    height: 66px; /*temp*/
+    background-color: red; /*temp*/
+    border: 2px solid green; /*temp*/
+}
+
+/* LOGO */
+.logo {
+    width: 120px;
+}
+
+/* MENU */
+.menu__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 5rem;
+}
+
+/* HERO AND SWIPER */
+.hero {
+    display: grid;
+    min-height: 100vh;
+}
+.hero__content {
+    height: 300px; /*temp*/
+    width: 500px; /*temp*/
+    background-color: red; /*temp*/
+    border: 2px solid green; /*temp*/
+}
+.hero__title {
+    color: var(--color-light);
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.10);
+}
+.hero__desc {
+    font-family: var(--font-sans-2);
+    font-weight: 300;
+    color: var(--color-light);
+    margin: 0;
+    max-width: 24rem;
+}
+
+.swiper {
+    width: 800px; /*temp*/
+    height: 500px; /*temp*/
+    background-color: red; /*temp*/
+    border: 2px solid green; /*temp*/
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+}
+
+.social {
+    width: 75px; /*temp*/
+    height: 345px; /*temp*/
+    background-color: red; /*temp*/
+    border: 2px solid green; /*temp*/
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+}
+
+.social__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.social__link {
+    color: var(--color-light);
+}
+
+.hero__ad-text {
+    width: 400px; /*temp*/
+    height: 100px; /*temp*/
+    background-color: red; /*temp*/
+    border: 2px solid green; /*temp*/
+}
