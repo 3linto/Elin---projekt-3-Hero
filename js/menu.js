@@ -1,19 +1,18 @@
 const responsiveMenu = () => {
 
-    // Get elements
     const menuButton = document.querySelector('#menu-button')
-    const menu = document.querySelector('.resp-menu')
-    const closeButton = document.querySelector('.close-button')
+    const header = document.querySelector('.site-header')
+    const menu = document.querySelector('.full-menu')
 
-    // Function to toggle menu
     const toggleMenu = () => {
-        // Toggle class on menu
-        menu.classList.toggle('resp-menu--open')
+        
+        menuButton.classList.toggle('close')
+        header.classList.toggle('menu-opened')
+        menu.classList.toggle('open')
+
     }
 
-    // Events
     menuButton.addEventListener('click', toggleMenu)
-    closeButton.addEventListener('click', toggleMenu)
 
 }
 
