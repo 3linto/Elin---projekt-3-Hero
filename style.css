@@ -112,6 +112,7 @@ a {
     text-transform: uppercase;
     letter-spacing: 0.08em;
     padding: 0.75rem 1.5rem;
+    transition: all 0.3s;
 }
 
 .button.button--big {
@@ -225,8 +226,7 @@ body {
     text-transform: uppercase;
 }
 
-.menu__link::before,
-.resp-menu__link::before {
+.menu__link::before {
     content: "";
     position: absolute;
     display: block;
@@ -369,6 +369,7 @@ body {
     z-index: 99;
     left: 42px;
     fill: var(--color-blue);
+    cursor: pointer;
 }
 
 .swiper-arrow-right {
