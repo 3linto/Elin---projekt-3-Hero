@@ -4,6 +4,11 @@ const swiper = new Swiper('.swiper', {
     loop: false,
     effect: 'fade',
     speed: 1000,
+
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
   
     // Navigation arrows
     navigation: {
